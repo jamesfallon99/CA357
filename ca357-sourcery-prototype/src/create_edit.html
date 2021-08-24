@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Sourcery</title>
+            <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+        </head>
+
+        <body>
+            <header>
+            <nav>
+                <ul>
+                    <li><a href="/profile">profile</a></li>
+                    <li><a href="/starred_repos">starred</a></li>
+                    <li><a href="/about">about</a></li>
+                    <li><a href="/">home</a></li>
+                </ul>
+            </nav>
+            </header>
+        <div class="repo-page-img-logo">
+            <a href="/"><img src="../img/wizard_logo.png" alt="wizard logo" height= "100" width= "100"/></a>
+            <h1>create page</h1>
+        </div>
+        <div class="repo-name-content">
+            <button>REPO</button>
+
+            <div class="description">
+                <br>
+                <label for="repo-link">Please link your github repo here:</label>
+                <br>
+                <br>
+                <input type="text" name="repo-link" value="< insert link to repo here >">
+            </div>
+
+            <div class="repo-stats">
+                <div class="pr">
+                    <p>PR</p>
+                </div>
+                <div class="issues">
+                    <p>Issues</p>
+                </div>
+                <div class="shell">
+                    <p>None</p>
+                </div>
+            </div>
+
+            <div class="languages">
+                <p>&#60</p>
+                <div class="language-circle">
+                    <p>A list of the languages used by this repo will be detected and displayed here</p>
+                </div>
+                <p>&#62</p>
+            </div>
+
+        </div>
+        <div class="ad-plus-contact">
+            <div class="ad-details">
+                <h3>Advertisement Details</h3>
+                <div class="ad-description">
+                    <textarea id="ad-descript" name="ad-descript" rows="12" cols="70"> Please give us some more details about the project.</textarea>
+                    <textarea id="skill-requirement" name="skill-requirement" rows="12" cols="70"> Please describe some of the skills/experience you are looking for in participants.</textarea>
+                </div>
+            </div>
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <div class="contact-description-input">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" value="">
+
+                    <br>
+                    <br>
+
+                    <label for="phone">Phone: </label>
+                    <input type="phone" name="phone" value="">
+
+                    <br>
+                    <br>
+                    <textarea id="additional-contacts" name="additional-contacts" rows="12" cols="24"> Additional contact details (links to slack, discord, etc)</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="save-button">
+            <button type="button" name="save">SAVE</button>
+        </div>
+
+    </body>
+    </html>

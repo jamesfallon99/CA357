@@ -1,0 +1,937 @@
+@font-face {
+    font-family: "Calibri";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/l/font?kit=J7afnpV-BGlaFfdAhLEY6w&skey=a1029226f80653a8&v=v10) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background-color: #313131;
+  }
+
+.index-body{
+    background-color: #313131;
+    position: absolute;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-family: "Calibri";
+}
+
+h1 {
+    color: #03A9F4;
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Calibri';
+    padding: 5%;
+    float: left;
+}
+
+nav {
+    top: 0;
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: none;
+    color: #03A9F4;
+    display: block;
+    padding: 22px;
+    font-family: 'Calibri';
+    font-size: 2rem;
+}
+
+
+nav li {
+    display: inline;
+    color: #03A9F4;
+    float: right;
+}
+
+.index-title{
+    justify-content: center;
+}
+
+.content {
+    width: 36rem;
+    padding: 4rem;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.content img {
+    float: left;
+}
+
+.content h1 {
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    font-family: Calibri;
+}
+
+.searchbox{
+    text-align: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.searchbox input[type=text]{
+    padding: 10px;
+    border-width: 0px;
+    border-color: #00B0FF;
+    font-size: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    width: 50%;
+    min-width: 30rem;
+}
+
+.searchbox select{
+    margin-top: 5px;
+    padding: 10px;
+    border-width: 1px;
+    border-color: #00B0FF;
+    font-size: 1rem;
+    border-radius: 5%;
+    width: 10%;
+    min-width: 6rem;
+}
+
+.flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-item{
+    width: 30rem;
+    height: 15rem;
+    border: 3px solid #00B0FF;
+    border-radius: 25px;
+    background-color: white;
+    margin: 2rem;
+    font-family: "Calibri";
+
+}
+
+.repoTileName{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    color: #0063b4
+}
+
+.repoTileName h2{
+    float: left;
+    color: #0063b4
+}
+
+.repoTileName p{
+    float:right;
+}
+
+.repoTileName img{
+    float: right;
+}
+
+.repoTileName img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.repoTileStars{
+    float: right;
+}
+
+
+.repoTileDesc{
+    word-wrap: break-word;
+    float: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.repoTileStats{/*needs fixing--not properly done, as when we margin this, it moves everthing in description*/
+    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-top: 10rem;
+    color: white;
+    font-family: "consolas";
+    /*border-style: solid;
+    border-color: rgb(0, 4, 255);*/
+}
+
+.repoTileNumber{
+    float:left;
+    font-size: 1rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    text-align: center;
+    color: black;
+    line-height: 0;
+    font-weight: bold;
+    font-family: "calibri";
+}
+
+.repoTileI{
+    float:left;
+    background-color:rgb(219, 55, 50);
+    font-size: 1rem;
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 0rem;
+    font-weight: bold;
+}
+
+
+.repoTilePR{
+    float:left;
+    background-color: #e07f24;
+    font-size: 1rem;
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 0rem;
+    font-weight: bold;
+}
+
+.repoTileLang{
+    float:left;
+    background-color: #57b653;
+    font-size: 1rem;
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 0rem;
+    font-weight: bold;
+}
+
+/* change */
+
+.repo-page-img-logo {
+    width: 36rem;
+    padding: 4rem;
+    overflow: hidden;
+}
+
+.repo-page-img-logo img {
+    margin-right: 15px;
+    float: left;
+}
+
+.repo-page-img-logo h1 {
+    font-size: 4rem;
+    font-family: 'Calibri';
+    color: #03A9F4;
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    text-align: left;
+}
+
+.repo-name-content{
+    background-color: white;
+    border-color: white;
+    border-style: none;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.repo-name-content h2{
+    color: #4078C0;
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+.description{
+    /*border-style: solid;
+    border-color: red;*/
+    width: 45%;
+    overflow:hidden;
+    word-wrap:break-word;
+    margin-left: 2rem;
+}
+.repo-name-content button{
+    background-color: #48c644;
+    border-radius: 10px;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: xx-large;
+    border: none;
+    padding: 1rem;
+}
+.repo-name-content button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.languages p{
+    /*border-style: solid;
+    border-color: red;*/
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    color: lightgrey;
+}
+.languages{
+    margin-left: 2rem;
+}
+.language-circle{
+    background-color: lightgrey;
+    display: inline-block;
+    font-size: 1rem;
+    border-style: solid;
+    border-color:lightgrey;
+    border-radius: 10px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin: 8px;
+}
+.language-circle p{
+    color: black;
+}
+
+
+.repo-stats{/*needs fixing--not properly done, as when we margin this, it moves everthing in description*/
+    margin-right: 1rem;
+    margin-top: 1rem;
+    /*border-style: solid;
+    border-color: rgb(0, 4, 255);*/
+}
+.repo-stats p{
+    font-family: 'Open Sans';
+}
+
+.issues{
+    float:right;
+    background-color:rgb(219, 55, 50);
+    display: inline-block;
+    font-size: 1rem;
+    border-style: solid;
+    border-color:rgb(219, 55, 50);
+    border-radius: 50px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin: 8px;
+}
+.issues p{
+    color: black;
+}
+
+.pr{
+    float:right;
+    background-color: #e07f24;
+    display: inline-block;
+    font-size: 1rem;
+    border-style: solid;
+    border-color:#e07f24;
+    border-radius: 20px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin: 8px;
+}
+.pr p{
+    color: black;
+}
+
+.shell{
+    float:right;
+    background-color: #57b653;
+    display: inline-block;
+    font-size: 1rem;
+    border-style: solid;
+    border-color:#57b653;
+    border-radius: 50px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin: 8px;
+}
+.shell p{
+    color: black;
+}
+
+
+.ad-details{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    border-color: white;
+    border-style: none;
+    border-radius: 25px;
+    width: 34.5%;
+    margin-left: 25%;
+}
+
+.ad-details h2{
+    color: #4078C0;
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+.ad-description{
+    /*border-style: solid;
+    border-color: red;*/
+    width: 90%;
+    overflow:hidden;
+    word-wrap:break-word;
+    margin-left: 2rem;
+}
+
+.contact-details{
+    background-color: white;
+    border-color: white;
+    border-style: none;
+    border-radius: 25px;
+    width: 15%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-details h2{
+    color: #4078C0;
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+.contact-description{
+    /*border-style: solid;
+    border-color: red;*/
+    width: 45%;
+    overflow:hidden;
+    word-wrap:break-word;
+    margin-left: 2rem;
+    font-family: 'Calibri';
+}
+.ad-plus-contact{
+    display: flex;
+}
+
+/*Need to fix up sizing as I was zoomed in slightly by accident. Used display flex for the bottom two boxes, might need help with that to get spacing correct.*/
+
+.comment-section{
+    background-color: white;
+    border-color: white;
+    border-style: none;
+    border-radius: 25px;
+    width: 50.5%;
+    margin-left: 25%;
+}
+
+.comment-section h2{
+    color: #4078C0;
+    font-family: 'Calibri';
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+.comment{
+    overflow:hidden;
+    word-wrap:break-word;
+    width: 90%;
+}
+.comment h4{
+    margin-left: 2rem;
+    font-family: 'Calibri';
+}
+
+.comment p{
+    margin-left: 2rem;
+    font-family: 'Calibri';
+}
+
+.post-a-comment{
+    border: solid;
+    border-radius: 20px;
+    margin-left: 2rem;
+    width: 90%;
+    background-color: lightgrey;
+    border-color: lightgrey;
+}
+.post-a-comment p{
+    margin-left: 1rem;
+    font-family: 'Calibri';
+}
+
+.arrow {
+    border: solid lightgray;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+  }
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+.name-and-arrow {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.name-and-arrow h2 {
+    margin-right: 15px;
+    float: left;
+}
+
+.name-and-arrow i {
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+}
+
+.name-and-arrow i:hover {
+    cursor: pointer;
+}
+
+.name-and-arrow img{
+    margin-left: 2rem;
+}
+.name-and-arrow img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.name-and-arrow h3{
+    font-family: 'Open Sans';
+    font-size: 2.5rem;
+    color: lightgray;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.name-and-arrow h3:hover{
+    transform: scale(1.2);
+}
+
+/*Responsive*/
+@media (max-width:1500px){
+    .starred {
+        flex-direction: column;
+        flex-flow: wrap column;
+        float: none;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        width: 100%;
+    }
+
+    .ad-details{
+        flex-direction: column;
+        flex-flow: wrap column;
+        float: none;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        width: 100%;
+    }
+    .contact-details{
+        flex-direction: column;
+        flex-flow: wrap column;
+        float: none;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        width: 100%;
+    }
+    .ad-plus-contact{
+        flex-direction: column;
+        flex-flow: wrap column;
+        float: none;
+    }
+    .comment-section{
+        flex-direction: column;
+        flex-flow: wrap column;
+        float: none;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        width: 100%;
+    }
+    .repo-name-content{
+        flex-direction: column;
+        flex-flow: wrap column;
+        float: none;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        width: 100%;
+
+    }
+    /*{
+        border: 1px solid #f00 !important;
+      }*/
+    .repo-name-content button{
+        font-size: x-large;
+
+    }
+    .name-and-arrow h3{
+        font-family: 'Open Sans';
+        font-size: 2rem;
+        color: lightgray;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+    .name-and-arrow img{
+        height: 30px;
+        width: 30px;
+    }
+    .arrow {
+        border: solid lightgray;
+        border-width: 0 5px 5px 0;/*changes the size of the arrow*/
+        display: inline-block;
+        padding: 8px;
+      }
+      .name-and-arrow i {
+        margin-top: 3.5rem;
+        margin-left: 0.3rem;
+    }
+
+    .name-and-arrow img{
+        margin-left: 0.5rem;
+    }
+    .arrow{
+        display: inline-block;
+    }
+    .description{
+        /*border-style: solid;
+        border-color: red;*/
+        width: 85%;
+        overflow:hidden;
+        word-wrap:break-word;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        text-transform: none;
+        color: #03A9F4;
+        display: block;
+        padding: 15px;
+        font-family: 'Calibri';
+        font-size: 1.5rem;
+    }
+    nav li{
+        text-align: center;
+    }
+    .contact-description{
+        width: 85%;
+    }
+    .contact-details h2{
+        text-align: center;
+        margin-left: 0rem;
+        font-size: 1.5rem;
+    }
+    .ad-details h2{
+        text-align: center;
+        margin-left: 0rem;
+        font-size: 1.5rem;
+    }
+    .comment-section h2{
+        text-align: center;
+        margin-left: 0rem;
+        font-size: 1.5rem;
+    }
+
+    .repo-page-img-logo {
+        width: 20rem;/*this caused the side scroller to show up*/
+        padding: 4rem;
+        overflow: hidden;
+    }
+
+    .repo-page-img-logo img {
+        margin-right: 15px;
+        float: left;
+        height: 80px;
+        width: 80px;
+    }
+
+    .repo-page-img-logo h1 {
+        font-size: 3rem;
+        font-family: 'Calibri';
+        color: #03A9F4;
+        margin-left: 15px;
+        display: block;
+        margin: 2px 0 0 0;
+        text-align: left;
+    }
+    .post-a-comment{
+        align-self: center;
+        margin-left: 1rem;
+        font-family: 'Open Sans';
+    }
+
+    nav a {
+        float: none;
+      }
+}
+h1 {
+    color: #03A9F4;
+    font-size: 6rem;
+    font-family: 'Calibri';
+}
+
+.center-header{
+    display: flex;
+    min-height: 15rem;
+}
+
+.center-title{
+    margin: auto;
+    display:flex;
+}
+
+.center-title h1 {
+    display: block;
+    margin: 2px 0 0 0;
+    font-family: Calibri;
+}
+
+
+.about-title{
+    width: 100%;
+    float: none;
+    display: block;
+    margin-top: 7rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-title h1 {
+    font-family: Calibri;
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+    float: none;
+    display: inline;
+    vertical-align: middle;
+}
+
+.about-title img {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.about-padding{
+    width: 100%;
+    display: block;
+    min-height: 4rem;
+}
+
+.about-description{
+    text-align: center;
+    font-family: "Calibri";
+    color: white;
+    font-size: 2rem;
+    text-overflow:break-word;
+    width: 100%;
+}
+
+/* CSS for profile page */
+
+
+#profile-heading{
+    color: #00B0FF;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.profile-repos {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-heading2{
+    color: #00B0FF;
+    font-size: 2rem;
+    padding-top: 12rem;
+}
+
+.profile-parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-section {
+    /*display: flex;
+    flex-direction: column;*/
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.contact-list {
+    list-style-type: none;
+}
+
+li {
+    margin: 20px 0 10px 0;
+}
+
+.starred {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0px;
+    float: right;
+    padding: 2rem;
+    text-align: left;
+    font-family: Calibri;
+    font-size: 1rem;
+}
+
+.profile-text {
+    text-align: left;
+    font-family: Calibri;
+    font-size: 1rem;
+    display: flex;
+}
+
+.profile-coments {
+    font-family: Calibri !important;
+}
+
+
+/* CSS for the create page */
+/* Most of it inherits from the repo_page CSS with minor tweaks and changes */
+.description p {
+    font-family: 'Calibri';
+}
+
+
+.description label {
+    font-size: 24px;
+    font-family: 'Calibri';
+    color: #313131;
+}
+
+.description input {
+    color: darkgray;
+    font-size: 18px;
+}
+
+.ad-plus-contact h3 {
+    margin: 5% 10% 2% 5%;
+    font-weight: normal;
+    font-size: 24px;
+    font-family: 'Calibri';
+    color: #313131;
+}
+
+.ad-description p {
+    font-family: 'Calibri';
+}
+
+.ad-description textarea {
+    resize: none;
+    margin: 1% 1% 4% 1%;
+    color: darkgray;
+}
+
+.contact-description-input {
+    overflow:hidden;
+    word-wrap:break-word;
+    margin-left: 2rem;
+}
+
+.contact-description-input label {
+    color: #313131;
+    font-family: 'Calibri';
+}
+
+.contact-description-input textarea {
+    resize: none;
+    color: darkgray;
+}
+
+.save-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-button button {
+    background-color: #48c644;
+    border-radius: 10px;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: xx-large;
+    border: none;
+    padding: 1rem;
+}
+
+#toTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(41, 74, 163); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #toTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+.starred-repo-page-img-logo {
+    width: 36rem;
+    padding: 4rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.starred-repo-page-img-logo img {
+    margin-right: 15px;
+    float: left;
+    display: flex;
+}
+
+.starred-repo-page-img-logo h1 {
+    font-size: 4rem;
+    font-family: 'Calibri';
+    color: #03A9F4;
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    text-align: left;
+}
+
+.edit-button {
+    background-color: #00B0FF;
+    border: none;
+    color: white;
+    padding: 8px 22px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    float: left;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+.edit-button:hover {
+    background-color: #0670a1;
+    color: white;
+}

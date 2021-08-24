@@ -1,0 +1,2581 @@
+<!doctype html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=100%, initial-scale=0.5, maximum-scale=1">
+            <title>Sourcery</title>
+            <link rel="icon" type="image/png" href="../img/wizard_logo.png"/>
+            <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body class="index-body">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/profile">profile</a></li>
+                    <li><a href="/create_edit">create</a></li>
+                    <li><a href="/starred_repos">starred</a></li>
+                    <li><a href="/about">about</a></li>
+                </ul>
+            </nav>
+            <div class="center-header">
+                <div class="center-title">
+                    <a href="/"><img src="../img/wizard_logo.png" height= "140" width= "140" alt="wizard logo"/></a>
+                    <a href="/"><h1>sourcery</h1></a>
+                </div>
+            </div>
+        </header>
+
+        <div class=searchbox>
+            <input type="text" placeholder="Search repos...">
+            <br>
+            <select id="skill">
+                <option>Skill level</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Difficult</option>
+            </select>
+            <select id=proglang>
+                <option>Language</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>JavaScript</option>
+                <option>Golang</option>
+                <option>Haskell</option>
+                <option>Shell</option>
+                <option>Other</option>
+            </select>
+            <select id=framework>
+                <option>Framework</option>
+                <option>Spring</option>
+                <option>Django</option>
+                <option>Express</option>
+                <option>Angular</option>
+                <option>Other</option>
+            </select>
+            <select id="sort-by">
+                <option>Sort By</option>
+                <option>Popularity</option>
+                <option>Date Added</option>
+                <option>Most Stars</option>
+            </select>
+        </div>
+
+        <div class="flexbox-container">
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/youtube_dl"><h2>youtube-dl</h2></a>
+                    <p>10847</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>An open-source download manager for video and audio content from YouTube.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>101</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>200</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/social_analyzer"><h2>social-analyzer</h2></a>
+                    <p>101</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/first_contributions"><h2>first-contributions</h2></a>
+                    <p>542139</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Any</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>0</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>1345</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item">
+                <div class="repoTileName">
+                    <a href="./samples/rich"><h2>rich</h2></a>
+                    <p>20567</p>
+                    <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                </div>
+                <div class="repoTileDesc"><p>Rich is a Python library for rich text and beautiful formatting in the terminal.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>156</p> </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>*Please note that this page is supposed to be infinite scrolling. However we were unable to replicate this functionality without using a database.</p>
+        </footer>
+
+        <!-- Button code taken from W3Schools -->
+        <button onclick="topFunction()" id="toTopBtn" title="Go to top">Back To Top</button>
+        <script>
+            //Get the button:
+            mybutton = document.getElementById("toTopBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+        <!-- End of button code from W3Schools -->
+    </body>
+</html>

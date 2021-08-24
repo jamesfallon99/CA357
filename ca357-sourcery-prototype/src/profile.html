@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width initial-scale=0.5, maximum-scale=1">
+            <title>Sourcery</title>
+            <link rel="icon" type="image/png" href="../img/wizard_logo.png"/>
+            <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+        </head>
+
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="/about">about</a></li>
+                        <li><a href="/create_edit">create</a></li>
+                        <li><a href="/starred_repos">starred</a></li>
+                        <li><a href="/">home</a></li>
+                    </ul>
+                </nav>
+                <div class="center-header">
+                    <div class="center-title">
+                        <a href="/"><img src="../img/wizard_logo.png" alt="wizard sourcery logo, clicking brings you to home" height= "140" width= "140"/></a>
+                        <h1>profile</h1>
+                    </div>
+                </div>
+            </header>
+
+        <div class="profile-parent">
+            <div class="flexbox-containe">
+            <div class="profile-text">
+                <div class="starred">
+                    <div class="profile-repos">
+                        <h2 id="profile-heading">my repos</h2>
+                        <div class="flexbox-item">
+                            <div class="repoTileName">
+                                <a href="/samples/my_radio"><h2>my-radio</h2></a>
+                                <p>35</p>
+                                <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                                <div>
+                                    <button onclick="location.href='/create_edit'" class="edit-button">Edit</button>
+                                </div>
+                            </div>
+                            <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                            <div class="repoTileStats">
+                                <div class="repoTileLang">
+                                    <p>L</p>
+                                </div>
+                                <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                                <div class="repoTileI">
+                                    <p>I</p>
+                                </div>
+                                <div class="repoTileNumber"> <p>16</p> </div>
+                                <div class="repoTilePR">
+                                    <p>PR</p>
+                                </div>
+                                <div class="repoTileNumber"> <p>13</p> </div>
+                            </div>
+                        </div>
+                        <div class="flexbox-item">
+                            <div class="repoTileName">
+                                <a href="/samples/first_contributions"><h2>first-contributions</h2></a>
+                                <p>542139</p>
+                                <img src="../img/empty_star.png" alt="empty star for favouriting a repo" height= "45" width= "45"/>
+                                <div>
+                                    <button onclick="location.href='/create_edit'" class="edit-button">Edit</button>
+                                </div>
+                            </div>
+                            <div class="repoTileDesc"><p>Help beginners to contribute to open source projects!</p></div>
+                            <div class="repoTileStats">
+                                <div class="repoTileLang">
+                                    <p>L</p>
+                                </div>
+                                <div class="repoTileNumber"> <p>Any</p> </div>
+                                <div class="repoTileI">
+                                    <p>I</p>
+                                </div>
+                                <div class="repoTileNumber"> <p>0</p> </div>
+                                <div class="repoTilePR">
+                                    <p>PR</p>
+                                </div>
+                                <div class="repoTileNumber"> <p>1345</p> </div>
+                            </div>
+                        </div>
+                        <button class=edit-button>See more</button>
+                    </div>
+                    <div class="content-section">
+                        <h2 id="profile-heading">about me</h2>
+                        <p>
+                            I am an up and coming software developer<br> with a burning passion for security and all things radio<br>
+                            <br>What doesn't hurt me makes me stronger
+                        </p>
+                        <h2 id="profile-heading">interests</h2>
+                        <p>
+                            My interests are very broad.<br> I enjoy security, software dev, cloud dev and mountain biking!<br>
+                            <br>Veni vidi vici.
+                        </p>
+
+                    </div>
+                    <div class="content-section">
+                        <h2 id="profile-heading">contact me</h2>
+                        <ul class="contact-list">
+                            <li><img src="../img/twitter.png" alt="twitter logo" width="30" height="30"style="padding-right: 5px;">@someusername123</li>
+                            <li><img src="../img/facebook.png" alt="facebook logo" width="30" height="30"style="padding-right: 5px;">@someusername123</li>
+                            <li><img src="../img/discord.png" alt="discord logo" width="30" height="30"style="padding-right: 10px;">discord.gg/somelink</li>
+                            <li><img src="../img/email.png" alt="email logo" width="30" height="30" style="padding-right: 5px;">someone@email.com</li>
+                        </ul>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="profile-comments">
+            <div class="comment-section">
+                <h2>Comments</h2>
+
+                <div class="post-a-comment">
+                    <p>Post a Comment</p>
+                </div>
+                <div class="comment">
+                    <h4>John Doe</h4>
+                    <p>Big epic person contact me on slack</p>
+                    <h4>Sarah Abudhabi</h4>
+                    <p>EEEEEEEEEEEEEE AAAAAAAAAAAAA SPORTS</p>
+                    <h4>Mike Durst</h4>
+                    <p>Merry Christmas</p>
+                    <h4>Joe Fluff</h4>
+                    <p>Fluffy here</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media screen and (max-width: 500px) {
+
+                .about-title img{
+                    width: 120px;
+                    height: 120px;
+                }
+
+                .about-title h1{
+                    font-size: 4rem;
+                }
+
+                nav a {
+                    text-decoration: none;
+                    text-transform: none;
+                    color: #03A9F4;
+                    display: block;
+                    padding: 6px;
+                    font-family: 'Calibri';
+                    font-size: 1.3rem;
+                }
+                nav li{
+                    text-align: center;
+                }
+
+                nav a {
+                    float: none;
+                }
+            }
+        </style>
+    </body>
+    </html>

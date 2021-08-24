@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Sourcery</title>
+            <link rel="icon" type="image/png" href="../img/wizard_logo.png"/>
+            <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+    </head>
+        
+    <body class="starred-body">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/profile">profile</a></li>
+                    <li><a href="/create_edit">create</a></li>
+                    <li><a href="/about">about</a></li>
+                    <li><a href="/">home</a></li>
+                </ul>
+            </nav>
+            <div class="starred-repo-page-img-logo">
+                <a href="/"><img src="../img/wizard_logo.png" height= "100" width= "100" alt="pixelated wizard sourcery logo"/></a>
+                <h1>starred repos</h1>
+            </div>
+        </header>
+
+        <div class=searchbox>
+            <input type="text" placeholder="Search starred repos...">
+            <br>
+            <select id="skill">
+                <option>Skill level</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Difficult</option>
+            </select>
+            <select id=proglang>
+                <option>Prog Lang</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>JavaScript</option>
+                <option>Golang</option>
+                <option>Haskell</option>
+                <option>Shell</option>
+                <option>Other</option>
+            </select>
+            <select id=framework>
+                <option>Framework</option>
+                <option>Spring</option>
+                <option>Django</option>
+                <option>Express</option>
+                <option>Angular</option>
+                <option>Other</option>
+            </select>
+            <select id="sort-by">
+                <option>Sort By</option>
+                <option>Popularity</option>
+                <option>Date Added</option>
+                <option>Most Stars</option>
+            </select>
+        </div>
+
+        <div class="flexbox-container">
+            <div class="flexbox-item"> 
+                <div class="repoTileName">
+                    <a href="../samples/my_radio"><h2>my-radio</h2></a>
+                    <p>35</p>
+                    <img src="../img/empty_star.png" height= "45" width= "45" alt="transparent star symbol for favouriting a repository"/>
+                </div>
+                <div class="repoTileDesc"><p>my-radio is an app which alerts you of when your favourite song is playing on the radio.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>Python | Java | Shell</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>16</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>13</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item"> 
+                <div class="repoTileName">
+                    <a href="../samples/social_analyzer"><h2>social_analyzer</h2></a>
+                    <p>3</p>
+                    <img src="../img/empty_star.png" height= "45" width= "45" alt="transparent star symbol for favouriting a repository"/>
+                </div>
+                <div class="repoTileDesc"><p>API and Web App for analyzing & finding a person profile across 300+ social media websites (Detections are updated regularly)</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>JavaScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>2</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>9</p> </div>
+                </div>
+            </div>
+
+            <div class="flexbox-item"> 
+                <div class="repoTileName">
+                    <a href="../samples/excalidraw"><h2>excalidraw</h2></a>
+                    <p>732</p>
+                    <img src="../img/empty_star.png" height= "45" width= "45" alt="transparent star symbol for favouriting a repository"/>
+                </div>
+                <div class="repoTileDesc"><p>Virtual whiteboard for sketching hand-drawn like diagrams.</p></div>
+                <div class="repoTileStats">
+                    <div class="repoTileLang">
+                        <p>L</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>TypeScript</p> </div>
+                    <div class="repoTileI">
+                        <p>I</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>20</p> </div>
+                    <div class="repoTilePR">
+                        <p>PR</p>
+                    </div>
+                    <div class="repoTileNumber"> <p>30</p> </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Button code taken from W3Schools -->
+        <button onclick="topFunction()" id="toTopBtn" title="Go to top">Back To Top</button>
+        <script>
+            //Get the button:
+            mybutton = document.getElementById("toTopBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+        <!-- End of button code from W3Schools -->
+    </body>
+</html>
